@@ -6,6 +6,8 @@ public class Bankexception {
 		Scanner sc=new Scanner(System.in);
 		System.out.println("Enter the Number of Customers");
 		size=sc.nextInt();
+		InvalidAmountException=new InvalidAmountException();
+		insufficientFundsException=new insufficientFundsException();
 		Customer []customer= new Customer[size];
 		for(int i=0;i<size;i++) {
 		    customer[i]=new Customer();
@@ -48,7 +50,7 @@ public class Bankexception {
 						}	
 					}
 					}
-					catch(amountException e){
+					catch(InvalidAmountException e){
 						System.out.println("Invalid amount");
 					}
 	         }
@@ -59,22 +61,30 @@ public class Bankexception {
 			     int Withdraw;
 			     System.out.println("Enter Amount to be Withdrawed");
 				 Withdraw=sc.nextInt();
-				 if(Withdraw<0) {
+				 if(Withdraw<=0) {
 					 throw FundsException;
 				 }
 				 else {
 					for(int i=0;i<size;i++) {
-							if(customer[i].AccNo==Number) {
-								customer[i].Balance=customer[i].Balance+Withdraw;
-								customer[i].showDetails();
-							}
+							if(customer[i].AccNo==Number){
+								if(Withdraw>customer[i].Balance){
+									throw FundException;
+								}
+								else{
+									customer[i].Balance=customer[i].Balance+Withdraw
+									customer[i].showDetails();
+								}
 					}
 				}
 					
 	         }
 	       
 		}
+			 catch(InvalidAmountException e){
+				 System.out.println(e.getMessage);
+			 }
 	}
+}
 }
 }
 	class Customer{
@@ -100,8 +110,11 @@ public class Bankexception {
 				}
 	}
 	class InvalidAmountException extends Exception{
+		InvalidAmountException(String Str){
 			super(str);
 		}
-		
 	}
+        class insufficientFundsException extends Exception{
+	}
+	
 
