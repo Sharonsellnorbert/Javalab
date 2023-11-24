@@ -131,3 +131,128 @@ public class CustomException{
 	}while(choice<5);
 }
 }
+/*How many number of customers do you want to input
+2
+Enter Name:
+SMITHA
+enter the account no:
+123
+enter the account type:
+SB
+Enter Balance:
+10000
+Enter Name:
+JACOB
+enter the account no:
+124
+enter the account type:
+CA
+Enter Balance:
+20000
+***Banking System Application***
+ 1. Display all account details
+ 2. Search by Account number
+ 3. Deposit the amount 
+ 4. Withdraw the amount 
+ 5.Exit 
+Enter your choice:
+1
+The customer details are:
+Name of account holder:SMITHA
+Account no:123
+Account type:SB
+Account Balance:10000
+
+The customer details are:
+Name of account holder:JACOB
+Account no:124
+Account type:CA
+Account Balance:20000
+
+***Banking System Application***
+ 1. Display all account details
+ 2. Search by Account number
+ 3. Deposit the amount 
+ 4. Withdraw the amount 
+ 5.Exit 
+Enter your choice:
+2
+Enter the Account Number:
+123
+The customer details are:
+Name of account holder:SMITHA
+Account no:123
+Account type:SB
+Account Balance:10000
+
+***Banking System Application***
+ 1. Display all account details
+ 2. Search by Account number
+ 3. Deposit the amount 
+ 4. Withdraw the amount 
+ 5.Exit 
+Enter your choice:
+3
+Enter the Account Number:
+123
+Enter the amount you want to deposit:
+5000
+The customer details are:
+Name of account holder:SMITHA
+Account no:123
+Account type:SB
+Account Balance:15000
+
+***Banking System Application***
+ 1. Display all account details
+ 2. Search by Account number
+ 3. Deposit the amount 
+ 4. Withdraw the amount 
+ 5.Exit 
+Enter your choice:
+3
+Enter the Account Number:
+0
+Enter the amount you want to deposit:
+0
+Invalid Amount Exception
+***Banking System Application***
+ 1. Display all account details
+ 2. Search by Account number
+ 3. Deposit the amount 
+ 4. Withdraw the amount 
+ 5.Exit 
+Enter your choice:
+4
+Enter the Account Number:
+123
+Enter the amount you want to withdraw:
+4000
+The customer details are:
+Name of account holder:SMITHA
+Account no:123
+Account type:SB
+Account Balance:11000
+
+***Banking System Application***
+ 1. Display all account details
+ 2. Search by Account number
+ 3. Deposit the amount 
+ 4. Withdraw the amount 
+ 5.Exit 
+Enter your choice:
+4
+Enter the Account Number:
+123
+Enter the amount you want to withdraw:
+0
+Invalid Amount Exception
+***Banking System Application***
+ 1. Display all account details
+ 2. Search by Account number
+ 3. Deposit the amount 
+ 4. Withdraw the amount 
+ 5.Exit 
+Enter your choice:
+5
+*/
