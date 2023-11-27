@@ -14,10 +14,10 @@ public class FileException {
 public static void main(String[]args) throws FileNotFoundException,IOException {
     FileReader Fr=null;
     FileWriter Fw=null;
-	String Data="Hello";
+    String Data="Hello";
     char array[]=new char[50];
 	try{
-		Fw=new FileWriter("input.txt");
+	Fw=new FileWriter("input.txt");
     	Fw.write(Data);
     	Fw.flush();
     	Fw.close();
@@ -27,9 +27,9 @@ public static void main(String[]args) throws FileNotFoundException,IOException {
     	
     	Fw=new FileWriter("output.txt");
     	Fw.write(array,0,bytes);
-		Fw.flush();
-		Fw.close();
-		Fr.close();
+	Fw.flush();
+	Fw.close();
+	Fr.close();
     }
     catch(IOException e) {
     	System.out.println("An Error has occured");
