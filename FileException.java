@@ -21,7 +21,7 @@ public static void main(String[]args) throws FileNotFoundException,IOException {
     	Fw.write(Data);
     	Fw.flush();
     	Fw.close();
-    	Fr=new FileReader("inpu.txt");
+    	Fr=new FileReader("input.txt");
     	int bytes=Fr.read(array);
    
     	
