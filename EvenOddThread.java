@@ -1,3 +1,10 @@
+/*
+ * File			:EvenOddThread.java
+ * Description	:To generate a random number and print its square if its an even number and print its cube if its an odd number
+ * Author		:Sharon Sell Norbert
+ * Version 		:1.0
+ * Date			:2-12-2023
+ */
 package Helloworld;
 import java.util.Random;
 public class EvenOddThread {
