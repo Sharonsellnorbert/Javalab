@@ -50,6 +50,7 @@ class Employee{
 		System.out.println("PHONE NUMBER :"+phoneNo);
 	}
 	void setSalary(){
+		Scanner sc= new Scanner(System.in);
 		System.out.println("Enter The Salary");
 		Salary=sc.nextInt();
 	}	
