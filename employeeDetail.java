@@ -13,13 +13,17 @@ public class employeeDetail {
 		Manager Ma=new Manager();
 		System.out.println("Enter the Details of Officer");
 		of.setDetails();
+		of.setSalary();
 		of.setSpecialization();
-		of.getDetails();	
+		of.getDetails();
+		of.printSalary();
 		of.getSpecialization();
 		System.out.println("Enter THE Details Of Manager");
 		Ma.setDetails();
+		Ma.setSalary();
 		Ma.setDepartment();
 		Ma.getDetails();
+		Ma.printSalary();
 		Ma.getDepartment();	
 	}
 
@@ -36,8 +40,6 @@ class Employee{
 		Address=sc.nextLine();
 		System.out.println("Enter The Age");
 		Age=sc.nextInt();
-		System.out.println("Enter The Salary");
-		Salary=sc.nextInt();
 		System.out.println("Enter Phone Number");
 		phoneNo=sc.nextLong();
 	}
@@ -45,8 +47,14 @@ class Employee{
 		System.out.println("NAME : "+Name);
 		System.out.println("AGE :"+Age);
 		System.out.println("ADDRESS :"+Address);
-		System.out.println("SALARY :"+Salary);
 		System.out.println("PHONE NUMBER :"+phoneNo);
+	}
+	void setSalary{
+		System.out.println("Enter The Salary");
+		Salary=sc.nextInt();
+	}	
+	void printSalary{
+		System.out.println("SALARY :"+Salary);
 	}
 }
 class Officer extends Employee{
