@@ -49,11 +49,11 @@ class Employee{
 		System.out.println("ADDRESS :"+Address);
 		System.out.println("PHONE NUMBER :"+phoneNo);
 	}
-	void setSalary{
+	void setSalary(){
 		System.out.println("Enter The Salary");
 		Salary=sc.nextInt();
 	}	
-	void printSalary{
+	void printSalary(){
 		System.out.println("SALARY :"+Salary);
 	}
 }
