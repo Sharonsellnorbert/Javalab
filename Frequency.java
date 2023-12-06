@@ -11,33 +11,29 @@ import java.util.Scanner;
 
 public class Frequency {
 	public static void main(String[]args) {
-		String line;
-		Scanner sc= new Scanner(System.in);
-		System.out.println("Enter the string");
-		line=sc.nextLine();
-		System.out.println("Enter the character to be Searched");
-		char character=sc.next().charAt(0);
-		int Frequency=Freq(line,character);
-		if(Frequency==0){
-			System.out.println("The Character is not present in the String");
+			String line;
+			Scanner sc= new Scanner(System.in);
+			System.out.println("Enter the string");
+			line=sc.nextLine();
+			System.out.println("Enter the character to be Searched");
+			char checkMe=sc.next().charAt(0);
+			int Frequency=checkFreq(line,checkMe);
+			if(Frequency==0){
+				System.out.println("The Character is not present in the String");
+			}
+			else {
+			System.out.println("Frequency is "+Frequency);
+			}
 		}
-		else {
-		System.out.println("Frequency is "+Frequency);
-		}
+			static  int checkFreq(String line,char checkMe) {
+				char[] CharArray= line.toCharArray();
+				int charCount=line.length(),count=0;
+			    for(int i=0;i<charCount;i++){
+			    	if(CharArray[i]==checkMe)
+			    	{
+			    		count++;		    				
+			    	}
+			    }
+			    return count;
+			}
 	}
-		static  int Freq(String line,char character) {
-			char[] CharArray= line.toCharArray();
-			int Strlength=line.length(),count=0;
-		    for(int i=0;i<Strlength;i++){
-		    	if(CharArray[i]==character)
-		    	{
-		    		count++;		    				
-		    	}
-		    }
-		    return count;
-		}
-}
-
-		    
-
-
