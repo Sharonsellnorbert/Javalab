@@ -1,5 +1,11 @@
+/*
+ * File			:CustomException.java
+ * Description	        :To implement Java program using Custom Exception
+ * Author		:Sharon Sell Norbert
+ * Version 		:1.0
+ * Date			:17-11-2023
+ */
 package Helloworld;
-
 import java.util.Scanner;
 class Customer{
 	Scanner sc=new Scanner(System.in);
