@@ -1,5 +1,11 @@
+/*
+ * File			:Interface.java
+ * Description	        :To illustrate interface inheritance
+ * Author		:Sharon Sell Norbert
+ * Version 		:1.0
+ * Date			:10-11-2023
+ */
 package Helloworld;
-
 public class Interface {
 	public static void main(String[]args) {
 		Fish fish = new Fish();
