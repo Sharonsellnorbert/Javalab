@@ -1,6 +1,6 @@
 /*
  * File			:MethodOverload.java
- * Description	:
+ * Description	        :To use methodoverloading and print the details of officer and manager
  * Author		:Sharon Sell Norbert
  * Version 		:1.0
  * Date			:17-10-2023
