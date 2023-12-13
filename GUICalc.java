@@ -1,3 +1,10 @@
+/*
+ * File			:GUICalc.java
+ * Description	:To create a Calculator using GUI
+ * Author		:Sharon Sell Norbert
+ * Version 		:1.0
+ * Date			:13-12-2023
+ */
 package hello;
 	import java.awt.event.*;
 	import java.awt.*;
