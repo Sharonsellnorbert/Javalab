@@ -71,9 +71,9 @@ class TrafficLightPanel extends JPanel {
     }
 
     public void setColors(Color c1, Color c2, Color c3) {
-        color1 = c1;
+        color1 = c3;
         color2 = c2;
-        color3 = c3;
+        color3 = c1;
         repaint();
     }
 
